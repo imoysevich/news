@@ -1,0 +1,11 @@
+@import url(./__text/clients__text.css);
+.clients {
+    margin: 80px auto 80px 7%;
+    max-width: 815px;
+}
+
+@media screen and (max-width: 830px) {
+    .clients {
+        margin: 30px 5%;
+    }
+}

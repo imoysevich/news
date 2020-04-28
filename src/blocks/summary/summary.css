@@ -1,0 +1,17 @@
+@import url(./__subtitle/summary__subtitle.css);
+@import url(./__title/summary__title.css);
+.summary {
+    padding: 80px 7%;
+}
+
+@media screen and (max-width: 830px) {
+    .summary {
+        padding: 64px 5% 40px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .summary {
+        padding: 16px 5% 24px;
+    }
+}

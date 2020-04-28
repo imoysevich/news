@@ -1,0 +1,11 @@
+a.header__link_active {
+    border-bottom: 3px solid #fff;
+    bottom: -1px;
+    color: #fff;
+}
+
+a.header__link_active-dark {
+    border-bottom: 3px solid #1A1B22;
+    bottom: -1px;
+    color: #1A1B22;
+}

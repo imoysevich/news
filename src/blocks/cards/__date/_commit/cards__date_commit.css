@@ -1,0 +1,8 @@
+.cards__date_commit {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 22px;
+    color: #B6BCBF;
+    grid-column: 1 / span 2;
+}

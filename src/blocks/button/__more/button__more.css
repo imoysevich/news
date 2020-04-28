@@ -1,0 +1,31 @@
+.button__more {
+    border: solid #fff 1px;
+    background: #fff;
+    border-radius: 80px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    color: #000;
+    width: 20%;
+    height: 64px;
+    text-align: center;
+    margin-top: 64px;
+}
+
+.button__more:hover {
+    background: #eee;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 830px) {
+    .button__more {
+        width: 36%;
+        margin: 32px auto 40px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .button__more {
+        width: 100%;
+    }
+}

@@ -1,0 +1,12 @@
+@media screen and (max-width: 830px) {
+    .arrow-right__commit {
+        position: absolute;
+        bottom: -30px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .arrow-right__commit {
+        display: none;
+    }
+}

@@ -1,0 +1,19 @@
+.footer__link {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    margin-left: 43px;
+}
+
+@media screen and (max-width: 830px) {
+    .footer__link {
+        margin-left: 25px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .footer__link {
+        margin: 0px;
+    }
+}

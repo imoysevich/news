@@ -1,0 +1,18 @@
+@import url(./__title/technology__title.css);
+.technology {
+    padding: 80px 17% 80px 7%;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1440px;
+    background: #F5F6F7;
+}
+
+@media screen and (max-width: 830px) {
+    .technology {
+        padding: 40px 5%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        max-width: 1232px;
+    }
+}

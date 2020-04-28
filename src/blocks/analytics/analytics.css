@@ -1,0 +1,24 @@
+@import url(./__bar/analytics__bar.css);
+@import url(./__cell/analytics__cell.css);
+@import url(./__counts/analytics__counts.css);
+@import url(./__date/analytics__date.css);
+@import url(./__fields-name/analytics__fields-name.css);
+@import url(./__table/analytics__table.css);
+@import url(./__text/analytics__text.css);
+@import url(./__title/analytics__title.css);
+.analytics {
+    padding: 80px 7%;
+    background: #F5F6F7;
+}
+
+@media screen and (max-width: 830px) {
+    .analytics {
+        padding: 40px 5%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .analytics {
+        padding: 24px 5%;
+    }
+}

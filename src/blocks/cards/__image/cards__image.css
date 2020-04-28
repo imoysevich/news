@@ -1,0 +1,17 @@
+@import url(./_commit/cards__image_commits.css);
+@import url(./_technology/cards__image_technology.css);
+.cards__image {
+    height: 47%;
+    background-size: cover;
+    background-position: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.cards__image::after {
+    content: '';
+    display: block;
+    background-color: #808080;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}

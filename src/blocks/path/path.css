@@ -1,0 +1,16 @@
+@import url(./__text/path__text.css);
+.path {
+    margin: 40px 7% 0px;
+}
+
+@media screen and (max-width: 830px) {
+    .path {
+        margin: 32px 5% 0px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .path {
+        display: none;
+    }
+}

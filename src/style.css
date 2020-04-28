@@ -1,0 +1,50 @@
+@import url(./vendor/normalize.css);
+@import url(./vendor/fonts.css);
+@import url(./vendor/flickity.css);
+@import url(./blocks/analytics/analytics.css);
+@import url(./blocks/arrow-right/arrow-right.css);
+@import url(./blocks/author/author.css);
+@import url(./blocks/button/button.css);
+@import url(./blocks/cards/cards.css);
+@import url(./blocks/main-carousel/main-carousel.css);
+@import url(./blocks/clients/clients.css);
+@import url(./blocks/commits/commits.css);
+@import url(./blocks/footer/footer.css);
+@import url(./blocks/header/header.css);
+@import url(./blocks/page/page.css);
+@import url(./blocks/path/path.css);
+@import url(./blocks/results/results.css);
+@import url(./blocks/search/search.css);
+@import url(./blocks/spinner/spinner.css);
+@import url(./blocks/summary/summary.css);
+@import url(./blocks/technology/technology.css);
+@import url(./blocks/underline/underline.css);
+p {
+    margin: 0;
+}
+
+h1 {
+    margin: 0;
+}
+
+h2 {
+    margin: 0;
+}
+
+ul {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #1A1B22;
+}
+
+a:hover {
+    font-size: 120%;
+    cursor: pointer;
+}
+
+body {
+    max-width: 1440px;
+}

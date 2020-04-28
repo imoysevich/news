@@ -1,0 +1,15 @@
+.cards__title_commits {
+    margin: 4px 0px 0px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 26px;
+    line-height: 30px;
+}
+
+@media screen and (max-width: 830px) {
+    .cards__title_commits {
+        font-size: 20px;
+        line-height: 30px;
+        margin-top: 10px;
+    }
+}

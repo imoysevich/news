@@ -1,0 +1,7 @@
+@media screen and (max-width: 700px) {
+    .footer__links_social {
+        flex-direction: row;
+        width: 70px;
+        justify-content: space-between;
+    }
+}

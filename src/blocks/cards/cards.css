@@ -1,0 +1,32 @@
+@import url(./__date/cards__date.css);
+@import url(./__description/cards__description.css);
+@import url(./__email/cards__email.css);
+@import url(./__image/cards__image.css);
+@import url(./__item/cards__item.css);
+@import url(./__link/cards__link.css);
+@import url(./__technology/cards__technology.css);
+@import url(./__text/cards__text.css);
+@import url(./__title/cards__title.css);
+.cards {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 32.5% 32.5% 32.5%;
+    column-gap: 1%;
+    row-gap: 1%;
+    padding-bottom: 64px;
+}
+
+@media screen and (max-width: 700px) {
+    .cards {
+        grid-template-columns: auto auto;
+        padding: 0px;
+    }
+}
+
+@media screen and (max-width: 620px) {
+    .cards {
+        display: flex;
+        flex-direction: column;
+        padding: 0px;
+    }
+}

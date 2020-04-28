@@ -1,0 +1,9 @@
+.cards__text_technology {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.2px;
+    max-width: 120px;
+}

@@ -1,0 +1,11 @@
+@import url(./_active/header__link_active.css);
+@import url(./_dark/header__link_dark.css);
+.header__link {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    margin-left: 3%;
+    margin-top: 30px;
+    color: #B6BCBF;
+    position: relative;
+}
