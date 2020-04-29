@@ -6,6 +6,7 @@ const webpack = require('webpack');
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const isDev = process.env.NODE_ENV === 'development';
 
+
 module.exports = {
     entry: {
         index: './src/index.js',
@@ -38,6 +39,10 @@ module.exports = {
             {
                 test: /\.(eot|ttf|woff|woff2)$/,
                 loader: 'file-loader?name=./vendor/[name].[ext]'
+            },
+            {
+                test: /node_modules\/flickity/,
+                loader: 'imports?define=>undefined'
             }
         ]
     },

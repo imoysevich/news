@@ -1,7 +1,7 @@
 import './about.css';
 
 // import * as Flickity from './vendor/flickity.pkgd.js'; //errors but horizontal but no arrows or dots but without the line, the compile is successfull
-
+const Flickity = require('flickity');
 import CommitCardList from './js/components/CommitCardList.js';
 
 import './images/favicon.png';
