@@ -1,5 +1,5 @@
 @import url(./__cell/carousel-cell.css);
-.main-carousel {
+.carousel {
     max-width: 1440px;
     width: 100%;
     position: relative;
@@ -8,13 +8,13 @@
 }
 
 @media screen and (max-width: 830px) {
-    .main-carousel {
+    .carousel {
         padding-bottom: 32px;
     }
 }
 
 @media screen and (max-width: 450px) {
-    .main-carousel {
+    .carousel {
         order: 2;
         padding-bottom: 16px;
     }

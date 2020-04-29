@@ -1,5 +1,6 @@
 import "./analytics.css";
 
+import './images/favicon.png';
 import './images/fb.png';
 import './images/github.png';
 

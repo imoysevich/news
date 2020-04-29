@@ -2,6 +2,7 @@ import "./index.css";
 
 import NewsCardList from './js/components/NewsCardList.js';
 
+import './images/favicon.png';
 import './images/path_05.png';
 import './images/image-03.png';
 import './images/fb.png';

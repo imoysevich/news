@@ -1,8 +1,10 @@
 import './about.css';
 
-// import './vendor/flickity.pkgd.js';
+// import * as Flickity from './vendor/flickity.pkgd.js'; //errors but horizontal but no arrows or dots but without the line, the compile is successfull
+
 import CommitCardList from './js/components/CommitCardList.js';
 
+import './images/favicon.png';
 import './images/path_05.png';
 import './images/image-03.png';
 import './images/fb.png';
@@ -18,5 +20,7 @@ import './images/webpack.png';
     const cards = [];
     commitCardList.render(container, cards);
 
-
+    // const flkty = new Flickity('.carousel');
+    // flkty.next();
+    // flkty.select(3);
 }());

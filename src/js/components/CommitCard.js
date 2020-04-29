@@ -15,7 +15,7 @@ export default class CommitCard {
     }
 
     createCard(commits) {
-        const cardsItemCommits = document.querySelector('.main-carousel');
+        const cardsItemCommits = document.querySelector('.carousel');
         cardsItemCommits.insertAdjacentHTML('afterbegin', this.getTemplate(commits));
         return cardsItemCommits;
     }

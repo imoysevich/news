@@ -9,6 +9,7 @@
     <title>NewsAnalyzer - About</title>
     <link rel="icon" href="./images/favicon.png" type="image/png" sizes="16x16">
     <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.about.css %>">
+    <!-- <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css"> -->
     <!-- <link rel="stylesheet" href="about.css"> -->
 </head>
 
@@ -79,9 +80,7 @@
                 <a href="https://github.com/imoysevich/news" class="commits__link" target="_blank">Открыть в Github
                     <img src="./images/path_05.png" class="arrow-right__commit" alt="right arrow">
                 </a>
-                <!-- <div class="main-carousel" data-flickity='{ "groupCells": true }'> -->
-                <div class="main-carousel" data-flickity='{ "cellAlign": "left", "contain": true }'></div>
-
+                <div class="carousel" data-flickity='{ "groupCells": true, "cellAlign": "left", "contain": true }'>
             </section>
 
         </main>
@@ -106,15 +105,15 @@
                 </li>
             </ul>
         </footer>
-    </div>
+        </div>
 
-    <!-- <script src="./vendor/flickity.pkgd.js"></script> -->
-    <!-- <script src="./js/commits.js"></script>
+        <!-- <script src="./vendor/flickity.pkgd.min.js"></script> -->
+        <!-- <script src="./js/commits.js"></script>
     <script src="./js/components/CommitCard.js"></script>
     <script src="./js/components/CommitCardList.js"></script>
     <script src="./about.js"></script> -->
 
-    <script src="<%= htmlWebpackPlugin.files.chunks.about.entry %>"></script>
+        <script src="<%= htmlWebpackPlugin.files.chunks.about.entry %>"></script>
 </body>
 
 </html>
