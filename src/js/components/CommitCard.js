@@ -6,7 +6,7 @@ export default class CommitCard {
     getTemplate(commits) {
         const template = `<div class="carousel-cell">
                           <p class="cards__date_commit">${commits.date}</p>
-                          <img class="cards__image_commits" src="url(${commits.avatar_url})">
+                          <img class="cards__image_commits" src="${commits.avatar_url}">
                           <h4 class="cards__title_commits">${commits.name}</h4>
                           <p class="cards__email">${commits.email}</p>
                           <p class="cards__text cards__text_commits">${commits.message}</p>

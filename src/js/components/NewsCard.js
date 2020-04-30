@@ -5,7 +5,7 @@ export default class NewsCard {
 
     getTemplate(articles) {
         const template = `<div class="cards__item">
-                        <img class="cards__image" src="url(${articles.urlToImage})">
+                        <img class="cards__image" src="${articles.urlToImage}">
                         <div class="cards__description">
                         <p class="cards__date">${articles.date}</p>
                         <h4 class="cards__title">${articles.title}</h4>
