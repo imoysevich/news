@@ -19,6 +19,12 @@
         "url": "https://github.com/imoysevich/news/issues"
     },
     "homepage": "https://github.com/imoysevich/news",
+    "browserslist": [
+        "defaults",
+        "not IE 11",
+        "not IE_Mob 11",
+        "maintained node versions"
+    ],
     "devDependencies": {
         "@babel/cli": "^7.8.4",
         "@babel/core": "^7.8.7",
