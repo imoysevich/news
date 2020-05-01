@@ -1,6 +1,6 @@
 .button__search {
-    border: solid #2F71E5 1px;
-    background: #2F71E5;
+    border: solid #2A65CC 1px;
+    background: #2A65CC;
     box-shadow: 0px 5px 15px rgba(14, 26, 57, 0.2);
     border-radius: 100px;
     font-size: 18px;
@@ -11,6 +11,12 @@
     position: absolute;
     right: 0px;
     z-index: 3;
+    cursor: pointer;
+}
+
+.button__search:hover {
+    border: solid #347EFF 1px;
+    background: #347EFF;
 }
 
 @media screen and (max-width: 700px) {

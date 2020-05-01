@@ -1,6 +1,7 @@
 import "./index.css";
 
 import NewsCardList from './js/components/NewsCardList.js';
+import SearchInput from './js/components/SearchInput.js';
 
 import './images/favicon.png';
 import './images/path_05.png';
@@ -14,4 +15,6 @@ import './images/github.png';
     const container = '';
     const cards = [];
     cardlist.render(container, cards);
+
+    const search = new SearchInput();
 }());

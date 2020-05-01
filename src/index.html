@@ -9,7 +9,6 @@
     <title>NewsAnalyzer - Main</title>
     <link rel="icon" href="./images/favicon.png" type="image/png" sizes="16x16">
     <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.index.css %>">
-    <!-- <link rel="stylesheet" href="index.css"> -->
 </head>
 
 <body>
@@ -27,8 +26,8 @@
                     <h2 class="search__subtitle">Введите в поиске любую тему и узнайте, насколько популярной она была в новостях за прошедшую неделю.</h2>
                     <form id="searchform" class="search__form" name="searchform" novalidate>
                         <input id="searchtext" type="search" required minlength="1" name="searchtext" class="search__input search__input_type_name" placeholder="Введите тему новости">
-                        <span id="error-name" class="error-msg"></span>
-                        <button id="submit" class="button button__search button__disabled" disabled>Искать</button>
+                        <!-- <span id="error-name" class="error-msg"></span> -->
+                        <button id="submit" class="button button__disabled button__search" disabled>Искать</button>
                     </form>
                 </section>
         </div>
@@ -96,11 +95,6 @@
                 </li>
             </ul>
         </footer>
-
-        <!-- <script src="./js/articles.js"></script>
-        <script src="./js/components/NewsCard.js"></script>
-        <script src="./js/components/NewsCardList.js"></script>
-        <script src="./index.js"></script> -->
 
         <script src="<%= htmlWebpackPlugin.files.chunks.index.entry %>"></script>
 

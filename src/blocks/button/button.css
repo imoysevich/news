@@ -1,6 +1,6 @@
 @import url(./__disabled/button__disabled.css);
 @import url(./__more/button__more.css);
 @import url(./__search/button__search.css);
-.button {
+button.button {
     text-align: center;
 }

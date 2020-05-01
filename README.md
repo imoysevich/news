@@ -1,12 +1,12 @@
 # News
 This is a diploma project in online Frond-end Developer course. The website provides two services: searches current world news on a given subject and analyzes the search results.
 
-## v0.0.1
+## v0.0.5
 
 ## Author: Irina Moysevich
 
 ### gh-pages
-http://imoysevich.github.io/diploma
+http://imoysevich.github.io/news
 
 ## Getting Started
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
