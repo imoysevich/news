@@ -1,7 +1,7 @@
 # News
 This is a diploma project in online Frond-end Developer course. The website provides two services: searches current world news on a given subject and analyzes the search results.
 
-## v0.0.5
+## v0.0.6
 
 ## Author: Irina Moysevich
 
