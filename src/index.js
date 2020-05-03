@@ -1,4 +1,5 @@
 import "./index.css";
+// import "./vendor/fonts.css";
 
 import NewsCardList from './js/components/NewsCardList.js';
 import SearchInput from './js/components/SearchInput.js';

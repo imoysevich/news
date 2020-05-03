@@ -10,7 +10,7 @@
     column-gap: 5%;
     grid-template-rows: 16% 14% 13% auto;
     background-color: #fff;
-    border-radius: 3%;
+    border-radius: 5%;
 }
 
 .carousel-cell.is-selected {
@@ -36,6 +36,6 @@
 @media screen and (max-width: 450px) {
     .carousel-cell {
         width: 100%;
-        margin: 0px;
+        margin-right: 8px;
     }
 }

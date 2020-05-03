@@ -1,12 +1,13 @@
 .search__form {
     width: 58%;
-    margin: 56px 0px;
+    margin: 0px 29% 80px;
     position: relative;
 }
 
 @media screen and (max-width: 830px) {
     .search__form {
-        width: 73%;
+        width: 70%;
+        margin-left: 0px;
     }
 }
 

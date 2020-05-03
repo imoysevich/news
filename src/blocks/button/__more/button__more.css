@@ -9,7 +9,7 @@
     width: 20%;
     height: 64px;
     text-align: center;
-    margin-top: 64px;
+    margin: 64px auto 0px;
 }
 
 .button__more:hover {
@@ -20,7 +20,7 @@
 @media screen and (max-width: 830px) {
     .button__more {
         width: 36%;
-        margin: 32px auto 40px;
+        margin: 32px auto 0px;
     }
 }
 

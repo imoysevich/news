@@ -9,21 +9,22 @@
 @import url(./__title/cards__title.css);
 .cards {
     width: 100%;
+    height: auto;
     display: grid;
     grid-template-columns: 32.5% 32.5% 32.5%;
-    column-gap: 1%;
-    row-gap: 1%;
+    column-gap: 2%;
     padding-bottom: 64px;
+    overflow: hidden;
 }
 
 @media screen and (max-width: 700px) {
     .cards {
-        grid-template-columns: auto auto;
+        grid-template-columns: 49% 49%;
         padding: 0px;
     }
 }
 
-@media screen and (max-width: 620px) {
+@media screen and (max-width: 450px) {
     .cards {
         display: flex;
         flex-direction: column;

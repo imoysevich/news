@@ -1,7 +1,7 @@
 @import url(./_commit/cards__date_commit.css);
 .cards__date {
     margin: 7% 0px 4%;
-    font-family: 'Source Sans Pro';
+    font-family: 'Source Sans Pro', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 18px;

@@ -6,9 +6,12 @@
     line-height: 22px;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 730px) {
     .footer__copyright {
         order: 3;
-        grid-column: 1 / span 2
+        grid-column: 1 / span 2;
+        /* position: absolute;
+        left: 20px;
+        bottom: 22px; */
     }
 }
