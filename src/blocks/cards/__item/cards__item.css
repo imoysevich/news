@@ -1,0 +1,22 @@
+    @import url(./_technology/cards__item_technology.css);
+    .cards__item {
+        height: 576px;
+        width: 100%;
+        background: #fff;
+        border-radius: 3%;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+    
+    @media screen and (max-width: 830px) {
+        .cards__item {
+            max-height: 430px;
+        }
+    }
+    
+    @media screen and (max-width: 700px) {
+        .cards__item {
+            margin-bottom: 8px;
+        }
+    }

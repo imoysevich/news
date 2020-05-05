@@ -1,0 +1,17 @@
+.footer__copyright {
+    color: #B6BCBF;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+@media screen and (max-width: 730px) {
+    .footer__copyright {
+        order: 3;
+        grid-column: 1 / span 2;
+        /* position: absolute;
+        left: 20px;
+        bottom: 22px; */
+    }
+}

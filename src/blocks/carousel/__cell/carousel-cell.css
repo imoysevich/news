@@ -1,0 +1,41 @@
+.carousel-cell {
+    height: 288px;
+    width: 32%;
+    max-width: 352px;
+    margin-right: 16px;
+    padding: 24px;
+    z-index: 0;
+    display: grid;
+    grid-template-columns: 18% 78%;
+    column-gap: 5%;
+    grid-template-rows: 16% 14% 13% auto;
+    background-color: #fff;
+    border-radius: 5%;
+}
+
+.carousel-cell.is-selected {
+    background: #fff;
+}
+
+.carousel-cell:before {
+    display: block;
+}
+
+@media screen and (max-width: 830px) {
+    .carousel-cell {
+        height: 242px;
+    }
+}
+
+@media screen and (max-width: 620px) {
+    .carousel-cell {
+        width: 45%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .carousel-cell {
+        width: 100%;
+        margin-right: 8px;
+    }
+}

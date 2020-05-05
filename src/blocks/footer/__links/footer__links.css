@@ -1,0 +1,17 @@
+@import url(./_social/footer__links_social.css);
+.footer__links {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    padding: 0px;
+}
+
+@media screen and (max-width: 730px) {
+    .footer__links {
+        flex-direction: column;
+        font-size: 18px;
+        line-height: 48px;
+        margin-bottom: 40px;
+    }
+}

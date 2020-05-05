@@ -1,0 +1,27 @@
+.search__input {
+    padding: 21px;
+    width: 82%;
+    font-size: 16px;
+    line-height: 22px;
+    border-radius: 100px;
+    border: 1px solid #D1D2D6;
+    box-sizing: border-box;
+    backdrop-filter: blur(8px);
+    outline: none !important;
+}
+
+.search__input:focus {
+    border: solid #2F71E5 2px;
+}
+
+@media screen and (max-width: 620px) {
+    .search__input {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .search__input {
+        margin-bottom: 16px;
+    }
+}

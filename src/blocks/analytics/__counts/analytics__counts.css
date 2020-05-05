@@ -1,0 +1,5 @@
+@import url(./_marker/analytics__counts_marker.css);
+.analytics__counts {
+    display: flex;
+    justify-content: space-between;
+}

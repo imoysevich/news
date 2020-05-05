@@ -1,0 +1,10 @@
+.footer__link_social {
+    align-self: flex-end;
+}
+
+@media screen and (max-width: 730px) {
+    ul.footer__links_social {
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+}

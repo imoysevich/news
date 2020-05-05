@@ -1,0 +1,8 @@
+.cards__image_commits {
+    border-radius: 100px;
+    grid-row: 2 / span 2;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 100%;
+}

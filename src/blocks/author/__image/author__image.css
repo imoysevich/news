@@ -1,0 +1,8 @@
+.author__image {
+    max-width: 464px;
+    width: 100%;
+    height: auto;
+    border: 100%;
+    grid-row: 1 / span3;
+    margin: auto 0px;
+}

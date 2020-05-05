@@ -1,0 +1,24 @@
+.cards__technology {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 60%;
+    text-align: center;
+}
+
+@media screen and (max-width: 830px) {
+    .cards__technology {
+        width: 100%;
+        margin: 0px;
+        margin-top: 40px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .cards__technology {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto;
+        justify-content: space-around;
+    }
+}

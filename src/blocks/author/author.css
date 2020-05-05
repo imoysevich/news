@@ -1,0 +1,13 @@
+@import url(./__description/author__description.css);
+@import url(./__image/author__image.css);
+@import url(./__text/author__text.css);
+@import url(./__title/author__title.css);
+.author {
+    padding: 80px 7%;
+}
+
+@media screen and (max-width: 830px) {
+    .author {
+        padding: 40px 5%;
+    }
+}

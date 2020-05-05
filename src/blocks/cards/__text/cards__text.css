@@ -1,0 +1,16 @@
+@import url(./_commit/cards__text_commits.css);
+@import url(./_technology/cards__text_technology.css);
+.cards__text {
+    margin: 5% 0px 3%;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    display: block;
+    display: -webkit-box;
+    max-width: 100%;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
