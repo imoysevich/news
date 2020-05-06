@@ -1,6 +1,6 @@
 {
     "name": "news",
-    "version": "0.0.7",
+    "version": "0.0.8",
     "description": "",
     "main": "index.js",
     "scripts": {
@@ -51,7 +51,7 @@
     "dependencies": {
         "babel-polyfill": "6.26.0",
         "core-js": "3.4.1",
-        "flickity": "2.2.1",
+        "flickity": "^2.2.1",
         "imports-loader": "0.8.0"
     }
 }
