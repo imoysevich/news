@@ -3,6 +3,7 @@ export default class CommitCard {
         this.cards = cards;
     }
 
+
     getTemplate(cards) {
         const monthNames = new Array('января', 'февраля', 'марта', 'апреля', 'мая', 'июня', 'июля', 'августа', 'сентября', 'октября', 'ноября', 'декабря');
         let date = new Date(cards.commit.committer.date);
@@ -18,6 +19,19 @@ export default class CommitCard {
     }
 
     createCard(cards) {
+        // var elem = document.querySelector('.main-carousel');
+        // const cardsItemCommits = document.querySelector('.carousel');
+        // var flkty = new Flickity(cardsItemCommits, {
+        //     // options
+        //     cellAlign: 'left',
+        //     contain: true
+        // });
+
+        // element argument can be a selector string
+        //   for an individual element
+        // var flkty = new Flickity('.carousel', {
+        //     // options
+        // });
         const cardsItemCommits = document.querySelector('.carousel');
         cardsItemCommits.insertAdjacentHTML('afterbegin', this.getTemplate(cards));
         return cardsItemCommits;

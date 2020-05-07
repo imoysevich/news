@@ -1,5 +1,6 @@
 import './about.css';
 
+// import Flickity from '../node_modules/flickity/js/flickity.js';
 const Flickity = require('flickity');
 // const flkty = new Flickity('.carousel', {
 //     // options
@@ -25,7 +26,6 @@ import './images/webpack.png';
     const githubApi = new GithubApi({
         baseUrl: 'https://api.github.com/repos/imoysevich/news/commits',
         headers: {
-            authorization: '06c4d3725c27b7fb65e843f094d1b7b609b8fcdb',
             'Content-Type': 'application/json'
         }
     });
