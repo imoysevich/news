@@ -30,21 +30,24 @@
         </div>
         <section class="results">
             <!--секция уйдет в javascript-->
-            <div class="results__container">
+            <div class="results__container isLoading hidden">
                 <div class="spinner"></div>
                 <h2 class="results__subtitle">Идет поиск новостей...</h2>
             </div>
-            <div class="results__container">
+            <div class="results__container results__notFound hidden">
                 <img src="./images/not-found_v1.png" alt="лупа с грустным лицом" class="results__image">
                 <h2 class="results__title">Ничего не найдено</h2>
                 <h3 class="results__subtitle">К сожалению по вашему запросу ничего не найдено.</h3>
             </div>
-            <div class="results__found">
+            <div class="results__container results__error hidden">
+                <h3 class="results__subtitle">Во время запроса произошла ошибка. Возможно, проблема с соединением или сервер недоступен. Подождите немного и попробуйте ещё раз.</h2>
+            </div>
+            <div class="results__found hidden">
                 <div class="results__found_header">
                     <h2 class="results__found_title">Результаты поиска</h2>
                     <a href="analytics.html" class="results__found_link">Посмотреть аналитику
-                        <img src="./images/path_05.png" class="arrow-right arrow-right__results" alt="right arrow">
-                    </a>
+                      <img src="./images/path_05.png" class="arrow-right arrow-right__results" alt="right arrow">
+                  </a>
                 </div>
                 <div class="cards"></div>
                 <div class="button">

@@ -1,82 +1,16 @@
 export const articles = [{
-        url: 'http://lenta.ru',
-        date: '2 августа, 2019',
-        urlToImage: 'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/arkhyz.jpg',
-        title: 'Национальное достояние – парки',
-        description: 'В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.',
-        sourceName: 'Лента.ру'
+    "source": {
+        "id": null,
+        "name": "Lifehacker.com"
     },
-    {
-        url: 'http://lenta.ru',
-        date: '2 августа, 2019',
-        urlToImage: 'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/arkhyz.jpg',
-        title: 'Лесные огоньки: история одной фотографии',
-        description: 'Фотограф отвлеклась от освещения суровой политической реальности Мексики, чтобы запечатлеть ускользающую красоту одного из местных чудес природы.',
-        sourceName: 'Лента.ру'
-    },
-    {
-        url: 'http://lenta.ru',
-        date: '2 августа, 2019',
-        urlToImage: 'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/arkhyz.jpg',
-        title: '«Первозданная тайга»: новый фотопроект Игоря Шпиленка',
-        description: 'Знаменитый фотограф снимает первозданные леса России, чтобы рассказать о необходимости их сохранения. В этот раз он отправился в Двинско-Пинежскую тайгу, где...',
-        sourceName: 'Лента.ру'
-    },
-    {
-        url: 'http://lenta.ru',
-        date: '2 августа, 2019',
-        urlToImage: 'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/arkhyz.jpg',
-        title: 'Национальное достояние – парки',
-        description: 'В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.',
-        sourceName: 'Лента.ру'
-    },
-    {
-        url: 'http://lenta.ru',
-        date: '2 августа, 2019',
-        urlToImage: 'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/arkhyz.jpg',
-        title: 'Лесные огоньки: история одной фотографии',
-        description: 'Фотограф отвлеклась от освещения суровой политической реальности Мексики, чтобы запечатлеть ускользающую красоту одного из местных чудес природы.',
-        sourceName: 'Лента.ру'
-    },
-    {
-        url: 'https://lenta.ru/',
-        date: '2 августа, 2019',
-        urlToImage: 'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/arkhyz.jpg',
-        title: '«Первозданная тайга»: новый фотопроект Игоря Шпиленка',
-        description: 'Знаменитый фотограф снимает первозданные леса России, чтобы рассказать о необходимости их сохранения. В этот раз он отправился в Двинско-Пинежскую тайгу, где...',
-        sourceName: 'Лента.ру'
-    }, {
-        url: 'http://lenta.ru',
-        date: '2 августа, 2019',
-        urlToImage: 'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/arkhyz.jpg',
-        title: 'Национальное достояние – парки',
-        description: 'В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.',
-        sourceName: 'Лента.ру'
-    },
-    {
-        url: 'http://lenta.ru',
-        date: '2 августа, 2019',
-        urlToImage: 'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/arkhyz.jpg',
-        title: 'Лесные огоньки: история одной фотографии',
-        description: 'Фотограф отвлеклась от освещения суровой политической реальности Мексики, чтобы запечатлеть ускользающую красоту одного из местных чудес природы.',
-        sourceName: 'Лента.ру'
-    },
-    {
-        url: 'http://lenta.ru',
-        date: '2 августа, 2019',
-        urlToImage: 'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/arkhyz.jpg',
-        title: '«Первозданная тайга»: новый фотопроект Игоря Шпиленка',
-        description: 'Знаменитый фотограф снимает первозданные леса России, чтобы рассказать о необходимости их сохранения. В этот раз он отправился в Двинско-Пинежскую тайгу, где...',
-        sourceName: 'Лента.ру'
-    }, {
-        url: 'http://lenta.ru',
-        date: '2 августа, 2019',
-        urlToImage: 'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/arkhyz.jpg',
-        title: 'Национальное достояние – парки',
-        description: 'В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.',
-        sourceName: 'Лента.ру'
-    }
-];
+    "author": "David Murphy",
+    "title": "How to Filter Unwanted 'Reply All' Emails",
+    "description": "If you’ve ever worked in a corporate setting, you’ve surely encountered the nightmare of a “Reply All” misfire. This is when someone accidentally (or purposefully) blasts an email to way more people than they should’ve, and even more  people chime in via “rep…",
+    "url": "https://lifehacker.com/how-to-filter-unwanted-reply-all-emails-1843392074",
+    "urlToImage": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/pnshqgt0049sl8t957ej.jpg",
+    "publishedAt": "2020-05-11T20:45:00Z",
+    "content": "If youve ever worked in a corporate setting, youve surely encountered the nightmare of a Reply All misfire. This is when someone accidentally (or purposefully) blasts an email to way more people than they shouldve, and even more people chime in via reply alla… [+3975 chars]"
+}];
 
 
 function createObj(param) {

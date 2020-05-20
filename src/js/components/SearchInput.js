@@ -1,53 +1,54 @@
+import NewsApi from '../modules/NewsApi.js';
+import DataStorage from '../modules/DataStorage.js';
+
 export default class SearchInput {
     constructor(element) {
         this.element = element;
+        const dataStorage = new DataStorage();
+        this.dataStorage = dataStorage;
         const searchform = document.forms.searchform;
-        // this.api = new Api();
+        const newsApi = new NewsApi();
+        this.newsApi = newsApi;
+
         // const userInfo = new UserInfo('.profile');
-        // // this.userInfo = userInfo;
-        // searchform.addEventListener('input', this.handleValidate.bind(this));
+        // this.userInfo = userInfo;
         searchform.addEventListener('input', this.inputEditHandler.bind(this));
-        // searchform.addEventListener('submit', this.setSubmitButtonState.bind(this));
+        searchform.addEventListener('submit', this.setSubmitButtonState.bind(this));
     }
-
-    checkInputValidity(element) {
-        // const errorElement = document.querySelector(`#error-${element.id}`);
-
-        // this.resetError(errorElement);
-
-        if (element.validity.valueMissing) {
-            // const errorMessage = "Это обязательное поле";
-            // errorElement.textContent = errorMessage;
-            // this.activateError(errorElement);
-            return false;
-            // } if (element.validity.tooShort || element.validity.tooLong) {
-            //     const errorMessage = "Должно быть от 2 до 30 символов";
-            //     errorElement.textContent = errorMessage;
-            //     this.activateError(errorElement);
-            //     return false;
-            // } if (element.validity.typeMismatch) {
-            //     const errorMessage = "Здесь должна быть ссылка";
-            //     errorElement.textContent = errorMessage;
-            //     this.activateError(errorElement);
-            //     return false;
-        } {
-            return true;
+    renderLoading(isLoading) {
+        if (isLoading) {
+            document.querySelector('.isLoading').style.display = 'initial';
+        } else {
+            document.querySelector('.isLoading').style.display = 'none';
         }
     }
 
-    // activateError(element) {
-    //     element.parentNode.classList.add('input-container__invalid');
-    // }
+    setSubmitButtonState(input) {
+        event.preventDefault();
+        this.renderLoading(true);
+        this.newsApi.getNewsCard()
+            .then((data) => {
+                if (data.articles.length > 0) {
+                    data.articles.slice(-3).map((element) => this.dataStorage.setLocalStorage(element));
+                    document.querySelector('.results__found').style.display = 'initial';
+                }
+                if (data.articles.length == 0) {
+                    document.querySelector('.results__notFound').style.display = 'initial';
+                }
+            })
+            .catch((err) => {
+                document.querySelector('.results__error').style.display = 'initial';
+            })
+            .finally((res) => {
+                this.renderLoading(false);
+            })
 
-    // resetError(element) {
-    //     element.parentNode.classList.remove('input-container__invalid');
-    //     element.textContent = '';
-    // }
+    }
 
-    inputEditHandler(inputs) {
+    inputEditHandler() {
         const buttonSearch = document.querySelector('.button__search');
 
-        if (Array.from(inputs).every((input) => this.checkInputValidity(input))) {
+        if ((input) => this.checkInputValidity(input)) {
             buttonSearch.removeAttribute('disabled');
             buttonSearch.classList.remove('button__disabled');
         } else {
@@ -55,36 +56,5 @@ export default class SearchInput {
             buttonSearch.classList.add('button__disabled');
         }
     }
-
-    // setSubmitButtonState(inputs) {
-    //     event.preventDefault();
-    //     const submit = document.querySelector('#submit');
-
-    //     const isValidForm = Array.from(inputs).every((input) => this.checkInputValidity(input));
-
-    //     [inputs].forEach(element => {
-
-    //         if (element.type != submit.type) {
-    //             if (!this.checkInputValidity(element)) isValidForm = false;
-    //         }
-    //     });
-
-    // if (isValidForm) {
-    //     this.api.editUserInfo(username.value, aboutUser.value)
-    //         .then((result) => {
-    //             // обрабатываем результат
-    //             this.userInfo.updateUserInfo(result);
-    //             document.querySelector('.popup__edit').classList.remove('popup_is-opened')
-    //         })
-    //         .catch((err) => {
-    //             console.log(err); // выведем ошибку в консоль
-    //         });
-    // document.querySelector('.popup__edit').classList.remove('popup_is-opened');
-    // }
-    // }
-
-    // handleValidate(event) {
-    //     this.checkInputValidity(event.target);
-    // }
 
 }

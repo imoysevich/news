@@ -1,7 +1,6 @@
 @import url(./vendor/normalize.css);
 @import url(./vendor/fonts.css);
 @import url(./vendor/flickity.css);
-@import url(//node_modules/flickity/css/flickity.css);
 @import url(./blocks/analytics/analytics.css);
 @import url(./blocks/arrow-right/arrow-right.css);
 @import url(./blocks/author/author.css);
@@ -20,6 +19,7 @@
 @import url(./blocks/summary/summary.css);
 @import url(./blocks/technology/technology.css);
 @import url(./blocks/underline/underline.css);
+@import url(./blocks/hidden/hidden.css);
 p {
     margin: 0;
 }

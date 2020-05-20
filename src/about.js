@@ -1,12 +1,7 @@
 import './about.css';
 
-// import Flickity from '../node_modules/flickity/js/flickity.js';
 const Flickity = require('flickity');
-// const flkty = new Flickity('.carousel', {
-//     // options
-//     cellAlign: 'left',
-//     contain: true
-// });
+
 import CommitCardList from './js/components/CommitCardList.js';
 import GithubApi from './js/modules/GithubApi.js';
 
