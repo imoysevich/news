@@ -20,6 +20,7 @@
 @import url(./blocks/technology/technology.css);
 @import url(./blocks/underline/underline.css);
 @import url(./blocks/hidden/hidden.css);
+@import url(./blocks/table/table.css);
 p {
     margin: 0;
 }

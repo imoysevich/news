@@ -1,24 +1,24 @@
-/* .analytics__table {
+.table__header {
     display: grid;
     grid-template-columns: 7% auto;
-    grid-template-rows: 44px 40px 80px 80px 80px 80px 80px 80px 24px 40px;
+    grid-template-rows: 44px 40px;
 }
 
 @media screen and (max-width: 1024px) {
-    .analytics__table {
+    .table__header {
         display: grid;
         grid-template-columns: 14% auto;
     }
 }
 
 @media screen and (max-width: 490px) {
-    .analytics__table {
+    .table__header {
         grid-template-columns: 18% auto;
     }
 }
 
 @media screen and (max-width: 320px) {
-    .analytics__table {
+    .table__header {
         grid-template-columns: 25% auto;
     }
-} */
+}
