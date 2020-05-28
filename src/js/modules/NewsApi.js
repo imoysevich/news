@@ -4,15 +4,19 @@ export default class NewsApi {
     }
 
     getNewsCard() {
+        // let loader = document.querySelector('.loader');
+        // loader.style.display = 'none';
+
         const searchInput = document.querySelector('.search__input');
+        localStorage.setItem('searchQuery', searchInput.value);
 
-        const dateCurrent = new Date();
-        const lastWeek = new Date(dateCurrent - (7 * 24 * 3600 * 1000));
-        const dateTo = `${dateCurrent.getFullYear()}-${dateCurrent.getMonth() + 1}-${dateCurrent.getDate()}`;
-        const dateFrom = `${lastWeek.getFullYear()}-${lastWeek.getMonth() + 1}-${lastWeek.getDate()}`;
-
+        //edit block
+        const dateNow = new Date();
+        const week = 7 * 24 * 3600 * 1000;
+        const weekAgo = new Date(dateNow - week);
+        const dateTo = `${dateNow.getFullYear()}-${dateNow.getMonth() + 1}-${dateNow.getDate()}`;
+        const dateFrom = `${weekAgo.getFullYear()}-${weekAgo.getMonth() + 1}-${weekAgo.getDate()}`;
         const searchQuery = searchInput.value;
-
         const urlNewsApi = 'https://cors-anywhere.herokuapp.com/http://newsapi.org/v2/everything?sortBy=popularity&language=ru&pageSize=100' //delete cors
         const urlQuery = `${urlNewsApi}&q=${searchQuery}&from=${dateFrom}&to=${dateTo}`;
 

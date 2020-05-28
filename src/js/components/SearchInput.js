@@ -1,17 +1,11 @@
 import NewsApi from '../modules/NewsApi.js';
-import DataStorage from '../modules/DataStorage.js';
+import NewsCards from './NewsCards.js';
 
 export default class SearchInput {
     constructor(element) {
         this.element = element;
-        const dataStorage = new DataStorage();
-        this.dataStorage = dataStorage;
         const searchform = document.forms.searchform;
-        const newsApi = new NewsApi();
-        this.newsApi = newsApi;
-
-        // const userInfo = new UserInfo('.profile');
-        // this.userInfo = userInfo;
+        this.newsApi = new NewsApi();
         searchform.addEventListener('input', this.inputEditHandler.bind(this));
         searchform.addEventListener('submit', this.setSubmitButtonState.bind(this));
     }
@@ -26,10 +20,20 @@ export default class SearchInput {
     setSubmitButtonState(input) {
         event.preventDefault();
         this.renderLoading(true);
+
         this.newsApi.getNewsCard()
             .then((data) => {
                 if (data.articles.length > 0) {
-                    data.articles.slice(-3).map((element) => this.dataStorage.setLocalStorage(element));
+                    const articles = data.articles;
+
+                    const articlesJSON = JSON.stringify(articles);
+                    localStorage.setItem('articles', articlesJSON);
+
+                    const articlesObj = JSON.parse(articlesJSON);
+
+                    const newsCards = new NewsCards(articlesObj);
+                    newsCards.render();
+
                     document.querySelector('.results__found').style.display = 'initial';
                 }
                 if (data.articles.length == 0) {
@@ -42,7 +46,6 @@ export default class SearchInput {
             .finally((res) => {
                 this.renderLoading(false);
             })
-
     }
 
     inputEditHandler() {
@@ -56,5 +59,4 @@ export default class SearchInput {
             buttonSearch.classList.add('button__disabled');
         }
     }
-
 }
