@@ -24,11 +24,12 @@ export default class SearchInput {
         this.newsApi.getNewsCard()
             .then((data) => {
                 if (data.articles.length > 0) {
-                    const articles = data.articles;
+                    const searchInput = document.querySelector('.search__input');
+                    localStorage.setItem('searchQuery', searchInput.value);
 
+                    const articles = data.articles;
                     const articlesJSON = JSON.stringify(articles);
                     localStorage.setItem('articles', articlesJSON);
-
                     const articlesObj = JSON.parse(articlesJSON);
 
                     const newsCards = new NewsCards(articlesObj);

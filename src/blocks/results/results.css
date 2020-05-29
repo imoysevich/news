@@ -2,23 +2,6 @@
 @import url(./__found/results__found.css);
 @import url(./__subtitle/results__subtitle.css);
 @import url(./__title/results__title.css);
-
-/* @import url(./__error/results__error.css); */
-
-
-/* .results {
+.results {
     background: #F5F6F7;
-    padding: 80px 7%;
 }
-
-@media screen and (max-width: 830px) {
-    .results {
-        padding: 80px 5%;
-    }
-}
-
-@media screen and (max-width: 320px) {
-    .results {
-        padding: 44px 5%;
-    }
-} */

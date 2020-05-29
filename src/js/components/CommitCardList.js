@@ -1,20 +1,19 @@
-// import { commits } from '../commits.js';
+import { commits } from '../commits.js';
 import CommitCard from './CommitCard.js';
 
 export default class CommitCardList {
-    constructor(commit) {
-        this.commit = commit;
-        // this.arrayCards = [];
-        this.commitCard = new CommitCard();
+    constructor(cards) {
+        this.cards = cards;
+        this.arrayCards = [];
+        this.commitCard = new CommitCard(commits);
     }
 
-    addCard(commit) {
-        this.commitCard.createCard(commit);
+    addCard(commits) {
+        this.commitCard.createCard(commits);
     }
 
-    // render(commit) {
-    //     [].forEach((element) => this.addCard(element));
+    render() {
+        commits.forEach((commits) => this.addCard(commits));
 
-    // }
-
+    }
 }

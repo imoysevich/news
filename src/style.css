@@ -1,6 +1,7 @@
+@import url(../node_modules/flickity/css/flickity.css);
+@import url(./vendor/flickity.css);
 @import url(./vendor/normalize.css);
 @import url(./vendor/fonts.css);
-@import url(./vendor/flickity.css);
 @import url(./blocks/analytics/analytics.css);
 @import url(./blocks/arrow-right/arrow-right.css);
 @import url(./blocks/author/author.css);

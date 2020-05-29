@@ -12,4 +12,5 @@ import './images/github.png';
     const statistics = new Statistics(articles);
     statistics.addSummary(articles);
     statistics.addAnalytics(articles);
+    // statistics.countSearchQueryByDate();
 }());

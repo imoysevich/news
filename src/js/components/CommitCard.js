@@ -1,43 +1,26 @@
 export default class CommitCard {
-    constructor(cards) {
-        this.cards = cards;
+    constructor(commits) {
+        this.commits = commits;
     }
 
-
-    getTemplate(cards) {
-        const monthNames = new Array('января', 'февраля', 'марта', 'апреля', 'мая', 'июня', 'июля', 'августа', 'сентября', 'октября', 'ноября', 'декабря');
-        let date = new Date(cards.commit.committer.date);
-        const formatDate = (date.getDate() + " " + monthNames[date.getMonth()] + ", " + date.getFullYear());
+    getTemplate(commits) {
         const template = `<div class="carousel-cell">
-                      <p class="cards__date_commit">${formatDate}</p>
-                      <img class="cards__image_commits" src="${cards.author.avatar_url}">
-                      <h4 class="cards__title_commits">${cards.commit.committer.name}</h4>
-                      <p class="cards__email">${cards.commit.committer.email}</p>
-                      <p class="cards__text cards__text_commits">${cards.commit.message}</p>
-                      </div>`
+                        <p class="cards__date_commit">${commits.date}</p>
+                        <img class="cards__image_commits" src="${commits.avatar_url}">
+                        <h4 class="cards__title_commits">${commits.name}</h4>
+                        <p class="cards__email">${commits.email}</p>
+                        <p class="cards__text cards__text_commits">${commits.message}</p>
+                        </div>`
         return template;
     }
 
-    createCard(cards) {
-        // var elem = document.querySelector('.main-carousel');
-        // const cardsItemCommits = document.querySelector('.carousel');
-        // var flkty = new Flickity(cardsItemCommits, {
-        //     // options
-        //     cellAlign: 'left',
-        //     contain: true
-        // });
-
-        // element argument can be a selector string
-        //   for an individual element
-        // var flkty = new Flickity('.carousel', {
-        //     // options
-        // });
+    createCard(commits) {
         const cardsItemCommits = document.querySelector('.carousel');
-        cardsItemCommits.insertAdjacentHTML('afterbegin', this.getTemplate(cards));
+        cardsItemCommits.insertAdjacentHTML('afterbegin', this.getTemplate(commits));
         return cardsItemCommits;
     }
 
-    // updateCards(commits) {
-    //     return createCard(commits);
-    // }
+    updateCards(commits) {
+        return createCard(commits);
+    }
 }

@@ -4,13 +4,8 @@ export default class NewsApi {
     }
 
     getNewsCard() {
-        // let loader = document.querySelector('.loader');
-        // loader.style.display = 'none';
-
         const searchInput = document.querySelector('.search__input');
-        localStorage.setItem('searchQuery', searchInput.value);
 
-        //edit block
         const dateNow = new Date();
         const week = 7 * 24 * 3600 * 1000;
         const weekAgo = new Date(dateNow - week);
