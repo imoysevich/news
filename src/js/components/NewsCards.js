@@ -42,14 +42,10 @@ export default class NewsCards {
         for (let i = 0; i < 3; i++) {
             if (this.articlesObj.length) {
                 this.cards.push(this.articlesObj.shift());
-
-
             } else {
                 this.button.classList.add('hidden');
             }
-
         }
-
         this.addCard(this.cards);
     }
 

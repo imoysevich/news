@@ -8,7 +8,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NewsAnalyzer - About</title>
     <link rel="icon" href="./images/favicon.png" type="image/png" sizes="16x16">
-    <!-- <link rel="stylesheet" href="./vendor/flickity.css"> -->
     <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.about.css %>">
 </head>
 
@@ -77,10 +76,7 @@
             <a href="https://github.com/imoysevich/news" class="commits__link" target="_blank">Открыть в Github
                     <img src="./images/path_05.png" class="arrow-right__commit" alt="right arrow">
                 </a>
-            <div class="carousel" data-flickity='{ "groupCells": true, "cellAlign": "left"}'>
-                <div class="flickity-viewport">
-                    <div class="flickity-slider"></div>
-                </div>
+            <div class="carousel">
             </div>
         </section>
 
@@ -105,6 +101,7 @@
             </ul>
         </footer>
     </div>
+
     <script src="<%= htmlWebpackPlugin.files.chunks.about.entry %>"></script>
 </body>
 

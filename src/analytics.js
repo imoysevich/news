@@ -7,10 +7,8 @@ import './images/fb.png';
 import './images/github.png';
 
 (function() {
-
     const articles = JSON.parse(localStorage.getItem('articles'));
     const statistics = new Statistics(articles);
-    statistics.addSummary(articles);
+    statistics.createSummary(articles);
     statistics.addAnalytics(articles);
-    // statistics.countSearchQueryByDate();
 }());

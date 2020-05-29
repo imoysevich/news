@@ -46,6 +46,7 @@ export default class SearchInput {
             })
             .finally((res) => {
                 this.renderLoading(false);
+
             })
     }
 

@@ -26,5 +26,4 @@ export default class NewsCard {
         cardsItem.insertAdjacentHTML('afterbegin', this.getTemplate(cards));
         return cardsItem;
     }
-
 }

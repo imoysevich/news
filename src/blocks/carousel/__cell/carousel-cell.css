@@ -13,10 +13,6 @@
     border-radius: 5%;
 }
 
-.carousel-cell.is-selected {
-    background: #fff;
-}
-
 .carousel-cell:before {
     display: block;
 }

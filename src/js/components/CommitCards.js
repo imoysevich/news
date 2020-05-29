@@ -1,6 +1,6 @@
-export default class CommitCard {
-    constructor(card) {
-        this.card = card;
+export default class CommitCards {
+    constructor(commits) {
+        this.commits = commits;
     }
 
 
@@ -20,21 +20,21 @@ export default class CommitCard {
 
     createCard(card) {
         const commitCard = document.querySelector('.carousel');
-        // const flkty = new Flickity(elem, {
-        //     // options
-        //     wrapAround: true,
-        //     cellAlign: 'left',
-        //     contain: true
-        // });
-        // const commitCard = document.querySelector('.flickity-slider');
-
         commitCard.insertAdjacentHTML('afterbegin', this.getTemplate(card));
-        return commitCard;
+        // return commitCard;
+    }
+
+    updateCard(card) {
+        return this.createCard(card);
     }
 
     addCard(card) {
-        // cards.reverse().slice(-20).map((card) => this.createCard(card));
-        this.createCard(card);
+        const commitCard = document.querySelector('.carousel');
+        // commitCard.appendChild(this.updateCard(card));
+        this.updateCard(card);
+    }
 
+    render(commits) {
+        commits.reverse().slice(-20).map((card) => this.addCard(card));
     }
 }
