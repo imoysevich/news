@@ -1,3 +1,7 @@
 @import url(./_header/results__found_header.css);
 @import url(./_link/results__found_link.css);
 @import url(./_title/results__found_title.css);
+.results__found {
+    margin: 0px auto;
+    padding: 80px 7%;
+}

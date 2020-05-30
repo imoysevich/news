@@ -1,12 +1,26 @@
-.results__container {
+div.results__container {
     margin: 0px auto;
     text-align: center;
+    align-items: center;
     width: 39%;
+    padding: 80px 7%;
 }
 
 @media screen and (max-width: 700px) {
     .results__container {
         width: 100%;
         margin: 32px 0px;
+    }
+}
+
+@media screen and (max-width: 830px) {
+    .results__container {
+        padding: 80px 5%;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .results__container {
+        padding: 44px 5%;
     }
 }

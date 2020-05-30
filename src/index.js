@@ -1,7 +1,5 @@
 import "./index.css";
-// import "./vendor/fonts.css";
 
-import NewsCardList from './js/components/NewsCardList.js';
 import SearchInput from './js/components/SearchInput.js';
 
 import './images/favicon.png';
@@ -12,10 +10,5 @@ import './images/not-found_v1.png';
 import './images/github.png';
 
 (function() {
-    const cardlist = new NewsCardList();
-    const container = '';
-    const cards = [];
-    cardlist.render(container, cards);
-
     const search = new SearchInput();
 }());

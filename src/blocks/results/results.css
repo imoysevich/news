@@ -4,17 +4,4 @@
 @import url(./__title/results__title.css);
 .results {
     background: #F5F6F7;
-    padding: 80px 7%;
-}
-
-@media screen and (max-width: 830px) {
-    .results {
-        padding: 80px 5%;
-    }
-}
-
-@media screen and (max-width: 320px) {
-    .results {
-        padding: 44px 5%;
-    }
 }

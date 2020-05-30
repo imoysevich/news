@@ -1,5 +1,5 @@
 .carousel-cell {
-    height: 288px;
+    height: 290px;
     width: 32%;
     max-width: 352px;
     margin-right: 16px;
@@ -11,10 +11,6 @@
     grid-template-rows: 16% 14% 13% auto;
     background-color: #fff;
     border-radius: 5%;
-}
-
-.carousel-cell.is-selected {
-    background: #fff;
 }
 
 .carousel-cell:before {

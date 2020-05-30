@@ -1,12 +1,12 @@
 .analytics__bar {
-  background: #2F71E5;
-  padding: 6px;
-  height: 24px;
-  color: #fff;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 12px;
-  line-height: 16px;
-  letter-spacing: 0.4px;
-  text-transform: uppercase;
+    background: #2F71E5;
+    padding-bottom: 6px;
+    height: 24px;
+    color: #fff;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
 }
