@@ -38,11 +38,11 @@ export default class SearchInput {
                     document.querySelector('.results__found').style.display = 'initial';
                 }
                 if (data.articles.length == 0) {
-                    document.querySelector('.results__notFound').style.display = 'initial';
+                    document.querySelector('.results__notFound').style.display = 'inherit';
                 }
             })
             .catch((err) => {
-                document.querySelector('.results__error').style.display = 'initial';
+                document.querySelector('.results__error').style.display = 'inherit';
             })
             .finally((res) => {
                 this.renderLoading(false);

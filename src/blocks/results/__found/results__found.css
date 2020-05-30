@@ -3,7 +3,5 @@
 @import url(./_title/results__found_title.css);
 .results__found {
     margin: 0px auto;
-    /* text-align: center; */
-    /* width: 39%; */
     padding: 80px 7%;
 }

@@ -1,6 +1,7 @@
-.results__container {
+div.results__container {
     margin: 0px auto;
     text-align: center;
+    align-items: center;
     width: 39%;
     padding: 80px 7%;
 }
