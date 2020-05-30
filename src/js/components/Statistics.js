@@ -1,7 +1,6 @@
 export default class Statistics {
     constructor(articles) {
         this.articles = articles;
-
     }
 
     //summary section
@@ -39,13 +38,13 @@ export default class Statistics {
 
     //analytics section
     createAnalytics(date, width) {
-        // // let date = new Date();
-        // const weekday = new Array('вс', 'пн', 'вт', 'ср', 'чт', 'пт', 'сб');
-        // const formatedDate = (date.getDate() + ', ' + weekday[date.getDay()]);
+        const weekday = new Array('вс', 'пн', 'вт', 'ср', 'чт', 'пт', 'сб');
+        let dateN = new Date(date);
+        const formatDate = (dateN.getDate() + ", " + weekday[dateN.getDay()]);
 
         const tableData = document.querySelector('.table__data');
         tableData.insertAdjacentHTML('beforeend', `
-                                          <p class="analytics__date">${date}</p>
+                                          <p class="analytics__date">${formatDate}</p>
                                           <p class="analytics__bar" style="width: ${width}%;"></p>`);
         return tableData;
     }

@@ -9,10 +9,9 @@ export default class NewsCards {
 
     getTemplate(card) {
         const monthNames = new Array('января', 'февраля', 'марта', 'апреля', 'мая', 'июня', 'июля', 'августа', 'сентября', 'октября', 'ноября', 'декабря');
-
         let date = new Date(card.publishedAt);
-
         const formatDate = (date.getDate() + " " + monthNames[date.getMonth()] + ", " + date.getFullYear());
+
         const template = `<div class="cards__item">
                             <img class="cards__image" src="${card.urlToImage}">
                             <div class="cards__description">
