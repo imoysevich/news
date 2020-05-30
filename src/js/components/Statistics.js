@@ -69,7 +69,6 @@ export default class Statistics {
         return `${date.getFullYear()}-${date.getMonth() + 1}-${date.getDate()}`;
     }
 
-
     countSearchQueryByDate(searchQuery) {
         const regex = new RegExp(`${searchQuery}`, 'gi');
         let sample = {};

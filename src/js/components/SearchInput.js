@@ -52,8 +52,9 @@ export default class SearchInput {
 
     inputEditHandler() {
         const buttonSearch = document.querySelector('.button__search');
+        const input = document.querySelector('.search__input');
 
-        if ((input) => this.checkInputValidity(input)) {
+        if (input.value.length >= 1) {
             buttonSearch.removeAttribute('disabled');
             buttonSearch.classList.remove('button__disabled');
         } else {
