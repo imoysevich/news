@@ -22,7 +22,7 @@ import './images/webpack.png';
             contain: true,
 
         });
-    }, 300);
+    }, 500);
 
     const commitCards = new CommitCards();
 
