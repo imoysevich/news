@@ -51,6 +51,8 @@ export default class SearchInput {
     }
 
     inputEditHandler() {
+        // element.parentNode.classList.add('hidden');
+
         const buttonSearch = document.querySelector('.button__search');
         const input = document.querySelector('.search__input');
 

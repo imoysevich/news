@@ -3,7 +3,7 @@ import './analytics.css';
 import Statistics from './js/components/Statistics.js'
 
 import './images/favicon.png';
-import './images/fb.png';
+import './images/in.png';
 import './images/github.png';
 
 (function() {

@@ -7,7 +7,7 @@ import GithubApi from './js/modules/GithubApi.js';
 import './images/favicon.png';
 import './images/path_05.png';
 import './images/image-03.png';
-import './images/fb.png';
+import './images/in.png';
 import './images/github.png';
 import './images/html.png';
 import './images/css.png';
@@ -35,8 +35,44 @@ import './images/webpack.png';
 
     githubApi.getCommitCard()
         .then((commits) => {
-            // commits.reverse().slice(-3).map((card) => commitCards.addCard(card));
-            commitCards.render(commits)
+            commitCards.render(commits);
         })
         .catch((err) => console.log(err));
 }());
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+/*
+gitHubApi.getGitInfo()
+
+//после полученеия результата запроса формируем массив полученных данных
+.then((res) => {
+    res.forEach(element => {
+        arrayWithCommits.push(commitCard.commitsObject(element));
+    })
+})
+
+//затем проходимся по этому массиву и создаем DOM-элемент, в этот элемент кладем карточку
+.then(() => {
+    arrayWithCommits.forEach((elem) => {
+        const cell = document.createElement('div');
+        commitCardList.pushCard(cell, elem);
+
+        // формиуруем контейнер с готовыми карточками
+        cellElems.push(cell);
+    })
+})
+
+//передаем этот контейнер в fikty для формирования карусели
+.then(function() {
+        flkty.append(cellElems)
+    })
+    .catch((err) => {
+        console.log(err)
+    })
+
+
+const flkty = new Flickity('.main-carousel', {
+    initialIndex: 4,
+    cellAlign: 'left'
+});
+*/

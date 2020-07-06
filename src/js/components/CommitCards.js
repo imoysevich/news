@@ -3,7 +3,6 @@ export default class CommitCards {
         this.commits = commits;
     }
 
-
     getTemplate(card) {
         const monthNames = new Array('января', 'февраля', 'марта', 'апреля', 'мая', 'июня', 'июля', 'августа', 'сентября', 'октября', 'ноября', 'декабря');
         let date = new Date(card.commit.committer.date);
@@ -19,22 +18,11 @@ export default class CommitCards {
     }
 
     createCard(card) {
-        const commitCard = document.querySelector('.carousel');
-        commitCard.insertAdjacentHTML('afterbegin', this.getTemplate(card));
-        // return commitCard;
-    }
-
-    updateCard(card) {
-        return this.createCard(card);
-    }
-
-    addCard(card) {
-        const commitCard = document.querySelector('.carousel');
-        // commitCard.appendChild(this.updateCard(card));
-        this.updateCard(card);
+        const commitCards = document.querySelector('.carousel');
+        commitCards.insertAdjacentHTML('afterbegin', this.getTemplate(card));
     }
 
     render(commits) {
-        commits.reverse().slice(-20).map((card) => this.addCard(card));
+        commits.reverse().slice(-20).map((card) => this.createCard(card));
     }
 }
