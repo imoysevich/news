@@ -12,13 +12,13 @@ export default class NewsApi {
         const dateTo = `${dateNow.getFullYear()}-${dateNow.getMonth() + 1}-${dateNow.getDate()}`;
         const dateFrom = `${weekAgo.getFullYear()}-${weekAgo.getMonth() + 1}-${weekAgo.getDate()}`;
         const searchQuery = searchInput.value;
-        const urlNewsApi = 'https://cors-anywhere.herokuapp.com/newsapi.org/v2/everything?sortBy=popularity&language=ru&pageSize=100'
-        const urlQuery = `${urlNewsApi}&q=${searchQuery}&from=${dateFrom}&to=${dateTo}`;
+        // const urlNewsApi = 'http://newsapi.org/v2/everything?sortBy=popularity&language=ru&pageSize=100'
+        // const urlQuery = `${urlNewsApi}&q=${searchQuery}&from=${dateFrom}&to=${dateTo}`;
 
-        return fetch(`${urlQuery}`, {
-
+        // return fetch(`${urlQuery}`, {
+        return fetch('https://newsapi.org/v2/everything?q=apple&from=2020-07-06&to=2020-07-06&sortBy=popularity&apiKey=d2ef23de7a0b40bc824b0736658233ff', {
                 headers: {
-                    authorization: 'd2ef23de7a0b40bc824b0736658233ff',
+                    // authorization: 'd2ef23de7a0b40bc824b0736658233ff',
                     'Content-Type': 'application/json'
                 }
             })
