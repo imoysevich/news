@@ -13,7 +13,7 @@ export default class NewsApi {
         const dateFrom = `${weekAgo.getFullYear()}-${weekAgo.getMonth() + 1}-${weekAgo.getDate()}`;
         const searchQuery = searchInput.value;
         // const urlNewsApi = 'https://newsapi.org/v2/everything?sortBy=popularity&language=ru&pageSize=100'
-        const urlNewsApi = 'https://praktikum.tk/news/v2/everything?sortBy=popularity&language=ru&pageSize=100'
+        const urlNewsApi = 'https://praktikum.tk/news/v2/everything?sortBy=popularity&language=ru&pageSize=100&apiKey=d2ef23de7a0b40bc824b0736658233ff'
 
         const urlQuery = `${urlNewsApi}&q=${searchQuery}&from=${dateFrom}&to=${dateTo}`;
 
@@ -29,7 +29,7 @@ export default class NewsApi {
         return fetch(`${urlQuery}`, {
 
                 headers: {
-                    authorization: 'd2ef23de7a0b40bc824b0736658233ff',
+                    // authorization: 'd2ef23de7a0b40bc824b0736658233ff',
                     'Content-Type': 'application/json'
                 }
             })
