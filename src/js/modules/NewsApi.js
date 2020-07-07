@@ -12,7 +12,7 @@ export default class NewsApi {
         const dateTo = `${dateNow.getFullYear()}-${dateNow.getMonth() + 1}-${dateNow.getDate()}`;
         const dateFrom = `${weekAgo.getFullYear()}-${weekAgo.getMonth() + 1}-${weekAgo.getDate()}`;
         const searchQuery = searchInput.value;
-        const urlNewsApi = 'https://newsapi.org/v2/everything?sortBy=popularity&language=ru&pageSize=100'
+        const urlNewsApi = 'https://cors-anywhere.herokuapp.com/newsapi.org/v2/everything?sortBy=popularity&language=ru&pageSize=100'
         const urlQuery = `${urlNewsApi}&q=${searchQuery}&from=${dateFrom}&to=${dateTo}`;
 
         return fetch(`${urlQuery}`, {
