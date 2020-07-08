@@ -35,14 +35,14 @@ export default class SearchInput {
                     const newsCards = new NewsCards(articlesObj);
                     newsCards.render();
 
-                    document.querySelector('.results__found').style.display = 'initial';
+                    document.querySelector('.results__found').style.display = 'block';
                 }
                 if (data.articles.length == 0) {
-                    document.querySelector('.results__notFound').style.display = 'inherit';
+                    document.querySelector('.results__notFound').style.display = 'block';
                 }
             })
             .catch((err) => {
-                document.querySelector('.results__error').style.display = 'inherit';
+                document.querySelector('.results__error').style.display = 'block';
             })
             .finally((res) => {
                 this.renderLoading(false);

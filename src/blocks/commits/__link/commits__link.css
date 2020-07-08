@@ -9,7 +9,7 @@
     right: 7%;
 }
 
-@media screen and (max-width: 830px) {
+@media screen and (max-width: 930px) {
     .commits__link {
         top: 48px;
     }

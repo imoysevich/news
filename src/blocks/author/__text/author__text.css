@@ -7,12 +7,6 @@
     width: 75%;
 }
 
-@media screen and (max-width: 830px) {
-    .author__text {
-        margin-bottom: 0px;
-    }
-}
-
 @media screen and (max-width: 700px) {
     .author__text {
         width: 100%;
