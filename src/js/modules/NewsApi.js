@@ -12,24 +12,13 @@ export default class NewsApi {
         const dateTo = `${dateNow.getFullYear()}-${dateNow.getMonth() + 1}-${dateNow.getDate()}`;
         const dateFrom = `${weekAgo.getFullYear()}-${weekAgo.getMonth() + 1}-${weekAgo.getDate()}`;
         const searchQuery = searchInput.value;
-        // const urlNewsApi = 'https://newsapi.org/v2/everything?sortBy=popularity&language=ru&pageSize=100'
         const urlNewsApi = 'https://praktikum.tk/news/v2/everything?sortBy=popularity&apiKey=d2ef23de7a0b40bc824b0736658233ff&language=ru&pageSize=100'
 
         const urlQuery = `${urlNewsApi}&q=${searchQuery}&from=${dateFrom}&to=${dateTo}`;
 
-        // const serverUrl = NODE_ENV === "development" ? "http://praktikum.tk/cohort7" : "https://praktikum.tk/cohort7";
-        // const api = new Api({
-        //     baseUrl: serverUrl,
-        //     headers: {
-        //         authorization: '6f6ef78e-9a11-4731-8716-e6c213c6ad6a',
-        //         'Content-Type': 'application/json'
-        //     }
-        // });
-
         return fetch(`${urlQuery}`, {
 
                 headers: {
-                    // authorization: 'd2ef23de7a0b40bc824b0736658233ff',
                     'Content-Type': 'application/json'
                 }
             })

@@ -25,6 +25,8 @@ import './images/webpack.png';
     }, 500);
 
     const commitCards = new CommitCards();
+    const cardsContainer = document.querySelector('.cards__container');
+    let arrayWithCommits = [];
 
     const githubApi = new GithubApi({
         baseUrl: 'https://api.github.com/repos/imoysevich/news/commits',
@@ -39,40 +41,3 @@ import './images/webpack.png';
         })
         .catch((err) => console.log(err));
 }());
-
-///////////////////////////////////////////////////////////////////////////////////////////////////
-/*
-gitHubApi.getGitInfo()
-
-//после полученеия результата запроса формируем массив полученных данных
-.then((res) => {
-    res.forEach(element => {
-        arrayWithCommits.push(commitCard.commitsObject(element));
-    })
-})
-
-//затем проходимся по этому массиву и создаем DOM-элемент, в этот элемент кладем карточку
-.then(() => {
-    arrayWithCommits.forEach((elem) => {
-        const cell = document.createElement('div');
-        commitCardList.pushCard(cell, elem);
-
-        // формиуруем контейнер с готовыми карточками
-        cellElems.push(cell);
-    })
-})
-
-//передаем этот контейнер в fikty для формирования карусели
-.then(function() {
-        flkty.append(cellElems)
-    })
-    .catch((err) => {
-        console.log(err)
-    })
-
-
-const flkty = new Flickity('.main-carousel', {
-    initialIndex: 4,
-    cellAlign: 'left'
-});
-*/

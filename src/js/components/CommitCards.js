@@ -18,11 +18,11 @@ export default class CommitCards {
     }
 
     createCard(card) {
-        const commitCards = document.querySelector('.carousel');
-        commitCards.insertAdjacentHTML('afterbegin', this.getTemplate(card));
+        const cardsContainer = document.querySelector('.carousel');
+        cardsContainer.insertAdjacentHTML('afterbegin', this.getTemplate(card));
     }
 
     render(commits) {
-        commits.reverse().slice(-20).map((card) => this.createCard(card));
+        commits.reverse().slice(-3).map((card) => this.createCard(card));
     }
 }

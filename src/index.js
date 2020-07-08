@@ -1,11 +1,5 @@
 import "./index.css";
 
-// var express = require('express')
-// var cors = require('cors')
-// var app = express()
-// const cors = require('cors');
-// app.use(cors());
-
 import SearchInput from './js/components/SearchInput.js';
 
 import './images/favicon.png';

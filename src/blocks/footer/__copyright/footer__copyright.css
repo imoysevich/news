@@ -10,8 +10,5 @@
     .footer__copyright {
         order: 3;
         grid-column: 1 / span 2;
-        /* position: absolute;
-        left: 20px;
-        bottom: 22px; */
     }
 }

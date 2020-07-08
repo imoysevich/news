@@ -16,19 +16,9 @@
 
 .button__search:hover {
     background: #347EFF;
-    /* cursor: pointer; */
 }
 
-
-/*
-@media screen and (max-width: 530px) {
-    .button__search {
-        right: 0px;
-        bottom: 0px;
-    }
-} */
-
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 400px) {
     .button__search {
         width: 100%;
         position: unset;
