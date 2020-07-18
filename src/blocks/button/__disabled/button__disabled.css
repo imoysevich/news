@@ -1,4 +1,4 @@
-button.button__disabled {
+.button__disabled {
     border: solid #2F71E5 1px;
     background: #2F71E5;
     cursor: default;

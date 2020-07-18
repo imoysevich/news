@@ -11,26 +11,27 @@ export default class SearchInput {
     }
     renderLoading(isLoading) {
         if (isLoading) {
-            document.querySelector('.isLoading').style.display = 'initial';
+            document.querySelector('.isLoading').style.display = 'block';
         } else {
             document.querySelector('.isLoading').style.display = 'none';
         }
     }
 
-    setSubmitButtonState(input) {
+    setSubmitButtonState() {
         event.preventDefault();
+        this.resetResults();
         this.renderLoading(true);
-
         this.newsApi.getNewsCard()
-            .then((data) => {
+
+        .then((data) => {
                 if (data.articles.length > 0) {
                     const searchInput = document.querySelector('.search__input');
                     localStorage.setItem('searchQuery', searchInput.value);
 
-                    const articles = data.articles;
-                    const articlesJSON = JSON.stringify(articles);
+                    let articles = data.articles;
+                    let articlesJSON = JSON.stringify(articles);
                     localStorage.setItem('articles', articlesJSON);
-                    const articlesObj = JSON.parse(articlesJSON);
+                    let articlesObj = JSON.parse(articlesJSON);
 
                     const newsCards = new NewsCards(articlesObj);
                     newsCards.render();
@@ -51,8 +52,6 @@ export default class SearchInput {
     }
 
     inputEditHandler() {
-        // element.parentNode.classList.add('hidden');
-
         const buttonSearch = document.querySelector('.button__search');
         const input = document.querySelector('.search__input');
 
@@ -63,5 +62,10 @@ export default class SearchInput {
             buttonSearch.setAttribute('disabled', true);
             buttonSearch.classList.add('button__disabled');
         }
+    }
+
+    resetResults(element) {
+        document.querySelector('.results__container').style.display = 'none';
+        document.querySelector('.results__found').style.display = 'none';
     }
 }

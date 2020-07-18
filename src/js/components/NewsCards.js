@@ -14,13 +14,13 @@ export default class NewsCards {
 
         const template = `<div class="cards__item">
                             <img class="cards__image" src="${card.urlToImage}">
+                            <a href="${card.url}" class="cards__link">
                             <div class="cards__description">
                             <p class="cards__date">${formatDate}</p>
                             <h4 class="cards__title">${card.title}</h4>
                             <p class="cards__text">${card.description}</p>
                             </div>
-                            <a href="" class="cards__link">
-                                <p class="cards__link_name">${card.source.name}</p>
+                            <p class="cards__link_name">${card.source.name}</p>
                             </a>
                             </div>`
         return template;
