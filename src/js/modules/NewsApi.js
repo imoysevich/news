@@ -12,16 +12,16 @@ export default class NewsApi {
         const dateTo = `${dateNow.getFullYear()}-${dateNow.getMonth() + 1}-${dateNow.getDate()}`;
         const dateFrom = `${weekAgo.getFullYear()}-${weekAgo.getMonth() + 1}-${weekAgo.getDate()}`;
         const searchQuery = searchInput.value;
-        const urlNewsApi = 'https://praktikum.tk/news/v2/everything?sortBy=popularity&apiKey=d2ef23de7a0b40bc824b0736658233ff&pageSize=100'
+        const urlNewsApi = 'https://nomoreparties.co/news/v2/everything?sortBy=popularity&apiKey=d2ef23de7a0b40bc824b0736658233ff&pageSize=100'
 
         const urlQuery = `${urlNewsApi}&q=${encodeURIComponent(searchQuery)}&from=${dateFrom}&to=${dateTo}`;
 
         return fetch(`${urlQuery}`, {
 
-                headers: {
-                    'Content-Type': 'application/json'
-                }
-            })
+            headers: {
+                'Content-Type': 'application/json'
+            }
+        })
             .then((res) => {
                 if (!res.ok) {
                     return Promise.reject(`Ошибка: ${res.status}`);

@@ -27,9 +27,9 @@ export default class NewsCards {
     }
 
     createCard(card) {
-        const cards = document.querySelector('.cards');
-        cards.insertAdjacentHTML('beforeend', this.getTemplate(card));
-        return cards;
+        const newsCards = document.querySelector('.cards');
+        newsCards.insertAdjacentHTML('beforeend', this.getTemplate(card));
+        return newsCards;
     }
 
     addCard(cards) {
