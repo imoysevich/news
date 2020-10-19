@@ -3,7 +3,7 @@ This is a diploma project in online Frond-end Developer course. The website prov
 
 The code is constantly updated to better the website functionality, and to minimize and rationalize the code itself.
 
-## v0.0.16
+## v0.0.18
 
 ## Author: Irina Moysevich
 
