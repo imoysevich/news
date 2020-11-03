@@ -8,6 +8,8 @@ This is a diploma project in online Frond-end Developer course. The website prov
 ### gh-pages
 http://paranoiacview.github.io/news
 
+[![Demo Doccou alpha](https://j.gifs.com/vlV9Vr.gif)](https://youtu.be/QgWo9QrXDkU)
+
 ## Getting Started
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
