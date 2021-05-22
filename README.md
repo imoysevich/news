@@ -6,7 +6,7 @@ This is a diploma project in online Frond-end Developer course. The website prov
 ## Author: Irina Moysevich
 
 ### gh-pages
-http://paranoiacview.github.io/news
+http://irinamsvch.github.io/news
 
 ## Demo 
 ![Demo News](../master/demo.gif)
