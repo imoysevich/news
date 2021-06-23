@@ -3,7 +3,7 @@ This is a diploma project in online Frond-end Developer course. The website prov
 
 ## v0.0.7
 
-## Author: Irina Moysevich
+## Author: Irina M
 
 ### gh-pages
 http://irinamsvch.github.io/news
