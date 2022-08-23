@@ -6,7 +6,7 @@ This is a diploma project in online Frond-end Developer course. The website prov
 ## Author: Irina M
 
 ### gh-pages
-http://irinamsvch.github.io/news
+http://irinagrl.github.io/news
 
 ## Demo 
 ![Demo News](../master/demo.gif)
