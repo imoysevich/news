@@ -1,10 +1,6 @@
 # News
 This is a diploma project in online Frond-end Developer course. The website provides two services: searches current world news on a given subject and analyzes the search results.
 
-## v0.0.7
-
-## Author: Irina M
-
 ### gh-pages
 http://irinagrl.github.io/news
 
